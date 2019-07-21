@@ -2,9 +2,37 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Truck Info</title>
     </head>
     <body>
+        <div class="trucks">
+            {% if truck_records %}
+            <table>
+                <thead>
+                    <th>Truck id</th>
+                    <th>Truck Model</th>
+                    <th>Capacity</th>
+                    <th>Cargo weight</th>
+                    <th>Overweight</th>
+                </thead>
+
+                {% for trck in truck_records %}
+                <tr>
+                    <td>{{trck.truck_id}}</td>
+                    <td>{{trck.work_truck}}</td>
+                    <td>{{trck.truck_work.truck_capacity}}</td>
+                    <td>{{trck.cargo_weight}}</td>
+                    <td>{{trck.truck_overweight}}</td>
+                </tr>
+                {% endfor% }
+            </table>
+
+            {% else %}
+              <p>No truck info</p>
+
+            {% endif %}
+
+        </div>
 
     </body>
 </html>
