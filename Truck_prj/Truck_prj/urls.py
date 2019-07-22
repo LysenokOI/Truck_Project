@@ -19,6 +19,6 @@ from truck_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
+    path('', views.truck_info),
     path('truck_info/', include('truck_app.urls')),
 ]

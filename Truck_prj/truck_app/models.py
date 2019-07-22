@@ -33,7 +33,7 @@ class TruckWork(models.Model):
             self.truck_overweight = truck_overweight
         else:
             self.truck_overweight = 0
-        return round(self.truck_overweight, 0.1)
+        return round(self.truck_overweight, 1)
 
     def __str__(self):
         return "{} truck with id: {}".format(self.truck_work, self.truck_id)
