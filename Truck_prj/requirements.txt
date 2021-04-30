@@ -27,7 +27,7 @@ pyOpenSSL==18.0.0
 pytz==2019.1
 requests==2.20.0
 requests-oauthlib==1.0.0
-rsa==4.0
+rsa==4.7
 six==1.11.0
 sounddevice==0.3.12
 sqlparse==0.3.0
